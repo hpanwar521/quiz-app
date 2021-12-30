@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Technology used
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+HTML, CSS, JavaScript, React.js,React-Hooks, React-Router-dom v6, Grid System of Bootstrap, Material UI 
 
-## Available Scripts
 
-In the project directory, you can run:
+### What are the scenarios
+:ballot_box_with_check:Here are the scenarios -
+When the user clicks a button, the next question should show
 
-### `npm start`
+If the user gets the question correct, it should increment their 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+After click automatic new question should appear
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Show clicked ans was correct or incorrect 
 
-### `npm test`
+When the user gets to the end of the quiz, their total score should be shown
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Our first goal is to take the question data from the array, and display it on the screen
 
-### `npm run build`
+![Demo](roughWork1.png)
+![Demo](roughWork2.png)
+![Demo](roughWork3.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Here it is :100:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Demo](quizAppGif.gif)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### What i have learned
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### :black_nib:Interactions with Material UI and key JavaScript methods.
+#### :black_nib:Working with user events and state to create interactive applications.
+#### :black_nib:How to shuffle array to mix correct option with incorrect option.
+#### :black_nib:React Hooks (in-depth)! ex. useSelector , useState, useEffect, useDispatch etc.
+#### :black_nib:Class-based components and functional components.
+#### :black_nib:Various HTML and CSS elements along with Basic JavaScript and modern ES6 practices used in building a functional and responsive quiz App, as shown in the Gif above
+#### :black_nib:Routing with React Router.
+#### :black_nib:How to use Grid System of Bootstrap or React-Bootstrap
+#### :black_nib:Amazing things and learning a lot along on the way.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
