@@ -1,0 +1,116 @@
+.mainContainer{
+    background-color: rgb(14, 13, 13);
+    margin: auto;
+    text-align: center;
+    color: blanchedalmond !important;
+    box-sizing: border-box;
+    min-height: 793px;
+
+    
+}
+.svgCol{
+    margin-left: 80px;
+}
+.quizAppHeading{
+    text-decoration: underline;
+    text-underline-offset: 20px;
+    
+}
+.quizAppHeading h1{
+    font-size: 5vh;
+    padding: 2rem;
+}
+
+.landingInputs{
+    float : left;
+    margin-top: 80px;
+}
+.dropdown{
+    color: blanchedalmond !important;
+}
+#demo-simple-select-required-label{
+    color: blanchedalmond !important;
+}
+#demo-simple-select-required{
+    color: blanchedalmond !important;
+}
+.requiredErrorText{
+    color: blanchedalmond !important;
+}
+#outlined-basic{
+    color: blanchedalmond !important;
+    text-align: center;
+}
+
+/* LandingQuizApp css */
+.error{
+  background-color: brown;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.quiz-question-box{
+ background-color: rgb(247, 244, 240);
+ outline: 5px solid orangered;
+ border-radius: 20px;
+ color: rgb(19, 17, 17);
+ font-weight: bolder;
+ padding: 5px;
+ margin-top: 90px;
+ margin-right: 20px;
+}
+.question-text{
+    margin: -15px;
+    padding: 10px;
+    font-size: 50px;
+}
+.previous{
+    background-color: blue !important;
+    margin: 20px !important;
+    color: white !important;
+}
+.next{
+    background-color: rgb(113, 143, 32) !important;
+    margin: 20px !important;
+    color: white !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+.see-score{
+    background-color: rgb(190, 42, 134) !important;
+    margin: 20px !important;
+    color: white !important;
+}
+.option{
+    border: 2px solid black;
+    text-align: left;
+    padding: 5px;
+    margin: 8px;
+}
+.option:hover{
+    border: 3px solid orangered;
+    text-align: left;
+    padding: 5px;
+    margin: 8px;
+}
+.correct{
+    background-color: green;
+}
+.incorrect{
+    background-color: rgb(175, 20, 20);
+}
+
+@media only screen and (max-width: 600px) {
+    .quiz-question-box{
+        background-color: rgb(247, 244, 240);
+        outline: 5px solid orangered;
+        border-radius: 20px;
+        color: rgb(19, 17, 17);
+        font-weight: bolder;
+        padding: 5px;
+        margin-top: 20px;
+        margin-right: 8px;
+       }
+       
+  }
+  

@@ -1,0 +1,71 @@
+tDmO4B0QX2Kh1eS6HSkwjfZrkJ5KdyZCRuEfOVta
+
+  const [success, setSuccess] = React.useState(false);
+  const [categories,setCategories] = useState(['Linux','DevOps','Networking','Programming','Cloud','Docker','Kubernetes']);
+  const [difficulty,setDifficulty] = useState(['Easy','Medium','Hard']);
+  const [apiData, setApiData] = useState([]);
+
+
+
+  fetch(`https://quizapi.io/api/v1/questions -G \
+  -d apiKey=tDmO4B0QX2Kh1eS6HSkwjfZrkJ5KdyZCRuEfOVta \
+  -d limit=10 \
+  -d category=${categories} \
+  -d difficulty=${difficulty}`)
+  .then(response => response.json())
+  .then(data => {
+    console.log('Success:', data);
+  })
+  .catch((error) => {
+    console.error('Error:', error);
+  });
+
+
+import * as React from "react";
+import * as ReactDOM from "react-dom";
+import { DropDownList } from "@progress/kendo-react-dropdowns";
+import countries from "./countries";
+
+const App = () => {
+  const [success, setSuccess] = React.useState(false);
+
+  const handleSubmit = event => {
+    event.preventDefault();
+    setSuccess(true);
+    setTimeout(() => {
+      setSuccess(false);
+    }, 3000);
+  };
+
+  return <div className="row example-wrapper">
+      <div className="col-xs-12 col-sm-6 offset-sm-3 example-col">
+        <div className="card">
+          <div className="card-block">
+            <form className="k-form" onSubmit={handleSubmit}>
+              <fieldset>
+                <legend>Select your flight route:</legend>
+                <div className="mb-3">
+                  <DropDownList style={{
+                  width: "100%"
+                }} label="Departure Country" name="departureCountry" data={countries} required={true} />
+                </div>
+                <div>
+                  <DropDownList style={{
+                  width: "100%"
+                }} label="Arrival Country" name="arrivalCountry" data={countries} required={true} />
+                </div>
+              </fieldset>
+              <input type="submit" className="k-button k-primary" value="Search" />
+            </form>
+          </div>
+        </div>
+      </div>
+      {success && <div className="alert alert-success" style={{
+      position: "absolute"
+    }}>
+          Form submitted!
+        </div>}
+    </div>;
+};
+
+ReactDOM.render(<App />, document.querySelector("my-app"));
